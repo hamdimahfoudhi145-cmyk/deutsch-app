@@ -10,7 +10,7 @@ workflows:
       - name: Add Android platform with Capacitor
         script: |
           npm install @capacitor/core @capacitor/cli @capacitor/android
-          npx cap init "Deutsch Lernen" "com.deutsch.app" --web-dir dist --signed
+          npx cap init "Deutsch Lernen" "com.deutsch.app" --web-dir dist
           npx cap add android
           npx cap sync
       - name: Build Android APK
