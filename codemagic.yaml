@@ -7,10 +7,11 @@ workflows:
       java: 17
       node: 20
     scripts:
-      - name: Clean npm and Install dependencies
+      - name: Install dependencies
         script: |
           rm -rf node_modules package-lock.json android
           npm install --include=optional
+          npm install @capacitor/core @capacitor/cli @capacitor/android
           npm rebuild
       - name: Build Web App
         script: npm run build
