@@ -5,13 +5,15 @@ workflows:
     max_build_duration: 30
     environment:
       java: 17
-      node: 18.18.0
+      node: 20
     scripts:
       - name: Install dependencies
-        script: npm install
+        script: |
+          npm install --include=optional
+          npm rebuild
       - name: Build Web App
         script: npm run build
-      - name: Clean & Add Capacitor Android Platform
+      - name: Add Android platform with Capacitor
         script: |
           npm install @capacitor/core @capacitor/cli @capacitor/android
           rm -rf android
@@ -22,6 +24,6 @@ workflows:
         script: |
           cd android
           chmod +x gradlew
-          ./gradlew assembleDebug --stacktrace
+          ./gradlew assembleDebug
     artifacts:
       - android/app/build/outputs/apk/debug/*.apk
