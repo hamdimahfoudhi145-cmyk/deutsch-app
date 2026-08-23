@@ -11,7 +11,7 @@ workflows:
         script: |
           rm -rf node_modules package-lock.json android
           npm install --include=optional
-          npm install @capacitor/core @capacitor/cli @capacitor/android
+          npm install @capacitor/core@5 @capacitor/cli@5 @capacitor/android@5
           npm rebuild
       - name: Build Web Assets
         script: npm run build
