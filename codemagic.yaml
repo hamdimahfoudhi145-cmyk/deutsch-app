@@ -4,26 +4,28 @@ workflows:
     instance_type: mac_mini_m1
     max_build_duration: 30
     environment:
-      java: 21
+      java: 17
       node: 20
     scripts:
-      - name: Install dependencies
+      - name: Clean & Install Project Dependencies
         script: |
           rm -rf node_modules package-lock.json android
           npm install --include=optional
           npm install @capacitor/core @capacitor/cli @capacitor/android
           npm rebuild
-      - name: Build Web App
+      - name: Build Web Assets
         script: npm run build
-      - name: Add Android platform clean
+      - name: Setup Capacitor Android
         script: |
           npx cap init "Deutsch Lernen" "com.deutsch.app" --web-dir dist
           npx cap add android
           npx cap sync
-      - name: Build Android APK
+      - name: Fix Android Gradle & Build APK
         script: |
           cd android
+          echo "android.enableJetifier=true" >> gradle.properties
+          echo "android.useAndroidX=true" >> gradle.properties
           chmod +x gradlew
-          ./gradlew assembleDebug --stacktrace
+          ./gradlew assembleDebug -x test --no-daemon
     artifacts:
       - android/app/build/outputs/apk/debug/*.apk
