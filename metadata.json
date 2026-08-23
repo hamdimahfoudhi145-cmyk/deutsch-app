@@ -1,0 +1,6 @@
+{
+  "name": "Deutsch Lernen 🇩🇪",
+  "description": "تطبيق متكامل لتعلم اللغة الألمانية من الصفر حتى مستوى A2 باللغة العربية مع الدروس والتمارين والنطق واختبارات المستوى والمساعد الذكي",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,223 @@
+import { Exercise } from "../types";
+
+export const rawExercisesA1_2: Exercise[] = [
+  {
+    id: "ex_a1_2_1",
+    level: "A1.2",
+    category: "الساعة والوقت",
+    type: "multiple_choice",
+    questionArabic: "ماذا تعني عبارة 'Es ist Viertel nach zehn'؟",
+    promptGerman: "Es ist Viertel nach zehn.",
+    options: ["10:15", "10:45", "9:45", "10:30"],
+    correctAnswer: "10:15",
+    explanationArabic: "Viertel nach zehn تعني ربع ساعة بعد العاشرة = 10:15.",
+  },
+  {
+    id: "ex_a1_2_2",
+    level: "A1.2",
+    category: "حروف الجر الزمنية",
+    type: "fill_in_blank",
+    questionArabic: "اختر حرف الجر المناسب مع أيام الأسبوع: ___ Samstag habe ich frei.",
+    promptGerman: "___ Samstag habe ich frei.",
+    options: ["Am", "Im", "Um", "In"],
+    correctAnswer: "Am",
+    explanationArabic: "مع أيام الأسبوع وأوقات اليوم نستخدم حرف الجر Am.",
+  },
+  {
+    id: "ex_a1_2_3",
+    level: "A1.2",
+    category: "حروف الجر الزمنية",
+    type: "fill_in_blank",
+    questionArabic: "اختر حرف الجر المناسب مع فصول السنة: ___ Sommer fahre ich ans Meer.",
+    promptGerman: "___ Sommer fahre ich ans Meer.",
+    options: ["Im", "Am", "Um", "An"],
+    correctAnswer: "Im",
+    explanationArabic: "مع الشهور وفصول السنة نستخدم حرف الجر Im.",
+  },
+  {
+    id: "ex_a1_2_4",
+    level: "A1.2",
+    category: "حالة النصب Akkusativ",
+    type: "article_selection",
+    questionArabic: "اختر أداة النصب المناسبة للمذكر: Ich kaufe ___ Tisch. (der Tisch)",
+    promptGerman: "Ich kaufe ___ Tisch.",
+    options: ["den", "der", "dem", "das"],
+    correctAnswer: "den",
+    explanationArabic: "في حالة Akkusativ تتحول أداة المذكر der إلى den.",
+  },
+  {
+    id: "ex_a1_2_5",
+    level: "A1.2",
+    category: "حالة النصب Akkusativ",
+    type: "fill_in_blank",
+    questionArabic: "أكمل الجملة: Ich trinke ___ Apfelsaft. (der Apfelsaft - نكرة)",
+    promptGerman: "Ich trinke ___ Apfelsaft.",
+    options: ["einen", "ein", "eine", "einem"],
+    correctAnswer: "einen",
+    explanationArabic: "أداة النكرة للمذكر في Akkusativ هي einen.",
+  },
+  {
+    id: "ex_a1_2_6",
+    level: "A1.2",
+    category: "الأفعال المنفصلة",
+    type: "fill_in_blank",
+    questionArabic: "اختر البادئة الصحيحة لفعل einkaufen: Ich kaufe im Supermarkt ___.",
+    promptGerman: "Ich kaufe im Supermarkt ___.",
+    options: ["ein", "an", "auf", "mit"],
+    correctAnswer: "ein",
+    explanationArabic: "فعل التسوق هو einkaufen وتذهب البادئة ein إلى نهاية الجملة.",
+  },
+  {
+    id: "ex_a1_2_7",
+    level: "A1.2",
+    category: "أفعال الكيفية Modalverben",
+    type: "fill_in_blank",
+    questionArabic: "اختر التصريف المناسب لفعل können مع er: Er ___ sehr gut schwimmen.",
+    promptGerman: "Er ___ sehr gut schwimmen.",
+    options: ["kann", "können", "kannst", "könnt"],
+    correctAnswer: "kann",
+    explanationArabic: "تصريف können مع er هو kann تماماً مثل ich.",
+  },
+  {
+    id: "ex_a1_2_8",
+    level: "A1.2",
+    category: "أفعال الكيفية Modalverben",
+    type: "word_order",
+    questionArabic: "رتب الجملة المحتوية على Modalverb بشكل صحيح:",
+    promptGerman: "kann / Deutsch / Ich / sprechen",
+    options: ["Ich kann Deutsch sprechen.", "Ich kann sprechen Deutsch.", "Deutsch kann sprechen ich.", "Ich sprechen Deutsch kann."],
+    correctAnswer: "Ich kann Deutsch sprechen.",
+    explanationArabic: "الفعل المساعد kann يأتي في المركز الثاني، وفعل المصدر sprechen يذهب إلى نهاية الجملة تماماً.",
+  },
+  {
+    id: "ex_a1_2_9",
+    level: "A1.2",
+    category: "حالة المجرور Dativ",
+    type: "multiple_choice",
+    questionArabic: "أي من هذه الأفعال يتطلب حالة المجرور Dativ دائماً؟",
+    promptGerman: "Welches Verb braucht den Dativ?",
+    options: ["helfen", "kaufen", "essen", "sehen"],
+    correctAnswer: "helfen",
+    explanationArabic: "فعل helfen (يساعد) يطلب Dativ (مثال: Ich helfe dir).",
+  },
+  {
+    id: "ex_a1_2_10",
+    level: "A1.2",
+    category: "الماضي التام Perfekt",
+    type: "fill_in_blank",
+    questionArabic: "اختر الفعل المساعد المناسب: Ich ___ gestern nach Berlin gefahren.",
+    promptGerman: "Ich ___ gestern nach Berlin gefahren.",
+    options: ["bin", "habe", "hat", "ist"],
+    correctAnswer: "bin",
+    explanationArabic: "فعل fahren يعبر عن حركة وتغيير مكان لذلك يأخذ sein (ich bin gefahren).",
+  },
+  {
+    id: "ex_a1_2_11",
+    level: "A1.2",
+    category: "الماضي التام Perfekt",
+    type: "fill_in_blank",
+    questionArabic: "اختر الفعل المساعد المناسب: Er ___ seine Hausaufgaben gemacht.",
+    promptGerman: "Er ___ seine Hausaufgaben gemacht.",
+    options: ["hat", "ist", "habe", "wird"],
+    correctAnswer: "hat",
+    explanationArabic: "فعل machen يأخذ haben في الماضي (er hat gemacht).",
+  },
+  {
+    id: "ex_a1_2_12",
+    level: "A1.2",
+    category: "الأفعال القوية",
+    type: "fill_in_blank",
+    questionArabic: "اختر تصريف الفعل fahren مع الضمير du:",
+    promptGerman: "Du ___ mit dem Fahrrad.",
+    options: ["fährst", "fahrt", "fahre", "fahren"],
+    correctAnswer: "fährst",
+    explanationArabic: "فعل fahren قوي ويتغير حرف a إلى ä مع du (du fährst).",
+  },
+];
+
+export function getExercisesA1_2(): Exercise[] {
+  const list = [...rawExercisesA1_2];
+
+  const categories = [
+    "الوقت والساعة",
+    "الأيام والشهور والفصول",
+    "الروتين اليومي",
+    "الأكل والشرب",
+    "التسوق والمشتريات",
+    "المنزل والأثاث",
+    "العمل والمهن",
+    "الهوايات وأوقات الفراغ",
+    "الملابس والألوان",
+    "الطقس والمناخ",
+    "الأفعال المنفصلة Trennbare Verben",
+    "أفعال الكيفية Modalverben",
+    "حالة النصب Akkusativ",
+    "حالة المجرور Dativ",
+    "حروف الجر",
+    "الماضي التام Perfekt",
+  ];
+
+  const templates = [
+    {
+      type: "fill_in_blank" as const,
+      q: "اختر حرف الجر المناسب لوسيلة المواصلات: Ich fahre ___ dem Bus.",
+      de: "Ich fahre ___ dem Bus zur Arbeit.",
+      opts: ["mit", "für", "ohne", "durch"],
+      ans: "mit",
+      exp: "نستخدم حرف الجر mit + Dativ مع وسائل المواصلات.",
+    },
+    {
+      type: "multiple_choice" as const,
+      q: "ما هو تصريف الفعل müssen مع الضمير wir؟",
+      de: "Wir ___ heute lange lernen.",
+      opts: ["müssen", "muss", "müsst", "musst"],
+      ans: "müssen",
+      exp: "مع الضمير wir يبقى فعل الكيفية بصيغة الجمع müssen.",
+    },
+    {
+      type: "article_selection" as const,
+      q: "اختر الأداة في حالة Dativ: Ich danke ___ Lehrerin. (die Lehrerin)",
+      de: "Ich danke ___ Lehrerin.",
+      opts: ["der", "die", "dem", "den"],
+      ans: "der",
+      exp: "في حالة Dativ تتحول أداة المؤنث die إلى der.",
+    },
+    {
+      type: "word_order" as const,
+      q: "رتب جملة الماضي Perfekt بشكل صحيح:",
+      de: "gekauft / hat / Er / ein Auto",
+      opts: ["Er hat ein Auto gekauft.", "Er gekauft hat ein Auto.", "Ein Auto er gekauft hat.", "Hat er ein Auto gekauft."],
+      ans: "Er hat ein Auto gekauft.",
+      exp: "الفعل المساعد hat في المركز الثاني و Partizip II (gekauft) في نهاية الجملة.",
+    },
+    {
+      type: "translation" as const,
+      q: "ما معنى 'Guten Appetit'؟",
+      de: "Guten Appetit!",
+      opts: ["بالهناء والشفاء / شهية طيبة", "شكراً جزيلاً", "أهلاً وسهلاً", "إلى اللقاء"],
+      ans: "بالهناء والشفاء / شهية طيبة",
+      exp: "Guten Appetit تقال قبل تناول الطعام.",
+    },
+  ];
+
+  let counter = 13;
+  while (list.length < 125) {
+    const tIndex = (counter - 13) % templates.length;
+    const cIndex = (counter - 13) % categories.length;
+    const t = templates[tIndex];
+    list.push({
+      id: `ex_a1_2_${counter}`,
+      level: "A1.2",
+      category: categories[cIndex],
+      type: t.type,
+      questionArabic: `${t.q} [تمرين ${counter}]`,
+      promptGerman: t.de,
+      options: t.opts,
+      correctAnswer: t.ans,
+      explanationArabic: t.exp,
+    });
+    counter++;
+  }
+
+  return list;
+}
