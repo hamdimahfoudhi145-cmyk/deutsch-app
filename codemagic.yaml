@@ -5,16 +5,18 @@ workflows:
     scripts:
       - name: Install dependencies
         script: npm install
+      - name: Build Web App
+        script: npm run build
       - name: Add Android platform with Capacitor
         script: |
           npm install @capacitor/core @capacitor/cli @capacitor/android
-          npx cap init "Deutsch Lernen" "com.deutsch.app" --web-dir dist
-          npm run build
+          npx cap init "Deutsch Lernen" "com.deutsch.app" --web-dir dist --signed
           npx cap add android
           npx cap sync
       - name: Build Android APK
         script: |
           cd android
+          chmod +x gradlew
           ./gradlew assembleDebug
     artifacts:
       - android/app/build/outputs/apk/debug/*.apk
